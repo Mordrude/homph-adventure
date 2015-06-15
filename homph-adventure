@@ -1,0 +1,38 @@
+var user = prompt("Glancing to your right, you see a big, swishing tail. Do you bat at it with your PAW, bite it with your MOUTH, watch it with your EYES, or IGNORE it? PAW/MOUTH/EYES/IGNORE").toUpperCase();
+switch(user) {
+    case 'PAW':
+        console.log("You extend your fluffy paw out to bat at the tail, but you fall far short of reaching it. What a lazy kitty.")
+        break;
+    case 'MOUTH':
+        var mouth = prompt("*Wigglewiggle* You pounce the tail, and you've got it! Do you let it go? Y/N").toUpperCase();
+        if(mouth = "Y") {
+            console.log("You relax your hold on the tail and it flicks away. Better luck next time!");
+        }
+        else {
+            console.log("You lift your head aloft proudly, with... your own tail in your mouth. You're homphing like a pro now!");
+        }
+        break;
+    case 'EYES':
+        var mesmerized = prompt("Does the swaying mesmerize you? TRUE/FALSE").toLowerCase();
+        var hypnotized = prompt("Are you hypnotized by its rhythm? TRUE/FALSE").toLowerCase();
+        if(mesmerized || hypnotized) {
+            console.log("The gentle rhythm of the tail's motion puts you at ease. You drift back off to sleep.");
+        }
+        else {
+            console.log("Not interested? You must be a bored kitty. You decide to take a nap anyway.");
+        }
+        break;
+    case 'IGNORE':
+        var bored = prompt("Are you bored? Y/N").toUpperCase();
+        var sleepy = prompt("Are you sleepy? Y/N").toUpperCase();
+        if(sleepy && bored ) {
+            console.log("Of course you're sleepy, you're a kitty! You drift back off to sleep.");
+        }
+        else {
+            console.log("Not sleepy? You must be a bored kitty. You decide to take a nap anyway.");
+        }
+        break;
+    default:
+        console.log("*flickflick* Oops, you missed your chance! Next time use PAW/MOUTH/EYES to interact.");
+    
+}
