@@ -33,6 +33,6 @@ switch(user) {
         }
         break;
     default:
-        console.log("*flickflick* Oops, you missed your chance! Next time use PAW/MOUTH/EYES to interact.");
+        console.log("*flickflick* Oops, you missed your chance! Next time use PAW/MOUTH/EYES/IGNORE to interact.");
     
 }
